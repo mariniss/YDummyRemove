@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" data-framework="intercoolerjs">
+<head>
+    <meta charset="utf-8">
+    <title>My Home Theater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <section id="main" ic-target="this">
+        #parse("/velocity/gpioRemote.vm")
+    </section>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/intercooler-0.9.6.min.js"></script>
+</body>
+
+</html>

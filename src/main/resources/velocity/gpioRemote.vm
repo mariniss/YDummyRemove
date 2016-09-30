@@ -1,0 +1,23 @@
+
+<header>
+    <h1>My Home Theater</h1>
+</header>
+
+<section id="main">
+    <ul id="gpio-list">
+        <table>
+            #foreach($gpio in $availableGpios)
+                <tr>
+                    <td><label>$gpio.label</label></td>
+                    <td><button ic-put-to="/gpio/$gpio.index/on">ON</button></td>
+                    <td><button ic-put-to="/gpio/$gpio.index/off">OFF</button></td>
+                </tr>
+                <tr><p></p></tr>
+            #end
+        </table>
+    </ul>
+</section>
+
+<footer>
+    <!-- On/Off All -->
+</footer>
